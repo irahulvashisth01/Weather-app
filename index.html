@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="mainheader">
+        Weather App
+    </div>
+
+    <div class="weatherbox">
+
+        <div class="inputform">
+
+            <input
+                type="text"
+                id="city-input"
+                class="citysearch"
+                placeholder="Enter city name"
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                onclick="searchCity()"
+                class="btncity">
+                Search
+            </button>
+
+        </div>
+
+        <div id="weather-output" class="weatheroutput">
+
+            <div class="weathercard">
+
+                <div class="weathercardheader">
+                    <h4 id="city-name" class="cardnature">
+                        Enter a city
+                    </h4>
+                </div>
+
+                <div class="weathercardbody">
+
+                    <h1 id="weather-type" class="cardtitle">
+                        Weather Details
+                    </h1>
+
+                    <div class="weather-temp">
+
+                        <div class="tempbox">
+                            Temperature:
+                            <span id="temp" class="tempa">--</span>°C
+                        </div>
+
+                        <div class="tempbox">
+                            Min Temperature:
+                            <span id="min-temp" class="tempa">--</span>°C
+                        </div>
+
+                        <div class="tempbox">
+                            Max Temperature:
+                            <span id="max-temp" class="tempa">--</span>°C
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>Weather App | Developed by Rahul Sharma</p>
+        <p>B.Tech CSE | NGF College of Engineering & Technology, Palwal</p>
+    </footer>
+
+</body>
+
+</html>
